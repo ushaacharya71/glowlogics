@@ -663,7 +663,6 @@ section,
 }
 
  .btn-get-started {
-  width: 180px;
   color: var(--contrast-color);
   background: var(--accent-color);
   font-family: var(--heading-font);
