@@ -1343,7 +1343,7 @@ section,
 
 .testimonial-item {
   border-radius: 15px; /* Adds rounded corners to the testimonial cards */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a soft shadow around the card */
+  /* Adds a soft shadow around the card */
   padding: 20px; /* Adds some padding inside the testimonial */
   background-color: #fff; /* Ensure the background is white for clarity */
   transition: all 0.3s ease; /* Smooth transition for hover effects */
@@ -1351,7 +1351,6 @@ section,
 
 /* Optional: Add hover effect for testimonials */
 .testimonial-item:hover {
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow on hover */
   transform: translateY(-5px); /* Adds a subtle lift effect */
 }
 
