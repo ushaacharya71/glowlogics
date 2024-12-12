@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Home Page -->
+  <url>
+    <loc>https://www.glowlogics.in/</loc>
+    <lastmod>2024-12-12</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Technical Courses -->
+  <url>
+    <loc>https://www.glowlogics.in/app-development.html</loc>
+    <lastmod>2024-12-12</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.glowlogics.in/data-science.html</loc>
+    <lastmod>2024-12-12</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.glowlogics.in/artificial-intelligence.html</loc>
+    <lastmod>2024-12-12</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.glowlogics.in/cloud-computing.html</loc>
+    <lastmod>2024-12-12</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.glowlogics.in/cyber-security.html</loc>
+    <lastmod>2024-12-12</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Non-Technical Courses -->
+  <url>
+    <loc>https://www.glowlogics.in/digital-marketing.html</loc>
+    <lastmod>2024-12-12</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.glowlogics.in/accounting.html</loc>
+    <lastmod>2024-12-12</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.glowlogics.in/ui-ux.html</loc>
+    <lastmod>2024-12-12</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.glowlogics.in/leadership.html</loc>
+    <lastmod>2024-12-12</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Contact and Features -->
+  <url>
+    <loc>https://www.glowlogics.in/#features</loc>
+    <lastmod>2024-12-12</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.glowlogics.in/#contact</loc>
+    <lastmod>2024-12-12</lastmod>
+    <priority>0.6</priority>
+  </url>
+</urlset>
