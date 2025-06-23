@@ -39,6 +39,29 @@
 
   });
 
+  ////////////////////////////////////////////////////////////////////////////////////////////
+   document.addEventListener("DOMContentLoaded", function () {
+    const hamburger = document.getElementById("hamburgerIcon");
+    const navLinks = document.querySelector(".nav-links-wrapper");
+
+    hamburger.addEventListener("click", function () {
+      if (navLinks.style.display === "block") {
+        navLinks.style.display = "none";
+      } else {
+        navLinks.style.display = "block";
+      }
+    });
+
+    // Optional: Reset menu state when resizing window
+    window.addEventListener("resize", function () {
+      if (window.innerWidth >= 1200) {
+        navLinks.style.display = "block";
+      } else {
+        navLinks.style.display = "none";
+      }
+    });
+  });
+
   /**
    * Toggle mobile nav dropdowns
    */
@@ -109,6 +132,41 @@
     faqItem.addEventListener('click', () => {
       faqItem.parentNode.classList.toggle('faq-active');
     });
+  });
+
+// const nav = document.querySelector("#navmenu");
+//   const toggle = document.querySelector(".mobile-nav-toggle");
+
+//   toggle.addEventListener("click", () => {
+//     nav.classList.toggle("nav-open");
+//   });
+
+
+
+ /**
+   * Navbar hide and shown effect..
+   */
+
+  let lastScroll = 0;
+  const header = document.getElementById("header");
+
+  window.addEventListener("scroll", () => {
+    const currentScroll = window.pageYOffset;
+
+    if (currentScroll <= 0) {
+      header.style.transform = "translateY(0)";
+      return;
+    }
+
+    if (currentScroll > lastScroll) {
+      // Scrolling down
+      header.style.transform = "translateY(-100%)";
+    } else {
+      // Scrolling up
+      header.style.transform = "translateY(0)";
+    }
+
+    lastScroll = currentScroll;
   });
 
 })();

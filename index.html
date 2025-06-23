@@ -51,23 +51,26 @@
 
 <body class="index-page">
 
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+<header id="header" class="header d-flex align-items-center sticky-top">
+  <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <a href="/" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/logo-final.png" alt="GlowLogics Logo">
+    <!-- Logo aligned fully left -->
+    <a href="/" class="logo d-flex align-items-center">
+      <img src="assets/img/logo-final.png" alt="GlowLogics Logo">
+    </a>
 
-      </a>
-
-      <nav id="navmenu" class="navmenu">
+    <!-- Navigation -->
+    <nav id="navmenu" class="navmenu">
+      <!-- Wrapped UL inside a div -->
+      <div class="nav-links-wrapper">
         <ul>
           <li><a href="#hero" class="active">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li class="dropdown"><a href="#"><span>Programs</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown">
+            <a href="#"><span>Programs</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li class="dropdown"><a href="#"><span>Technical</span> <i
-                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <li class="dropdown">
+                <a href="#"><span>Technical</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
                   <li><a href="/app-development.html">App Development</a></li>
                   <li><a href="/data-science.html">Data Science</a></li>
@@ -75,11 +78,10 @@
                   <li><a href="/cloud-computing.html">Cloud Computing</a></li>
                   <li><a href="/cyber-security.html">Cyber Security</a></li>
                   <li><a href="/web-development.html">Web Development</a></li>
-
                 </ul>
               </li>
-              <li class="dropdown"><a href="#"><span>Non Technical</span> <i
-                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <li class="dropdown">
+                <a href="#"><span>Non Technical</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
                   <li><a href="/digital-marketing.html">Digital Marketing</a></li>
                   <li><a href="/accounting.html">Accounting</a></li>
@@ -90,48 +92,63 @@
               <li><a href="#services">All Courses</a></li>
             </ul>
           </li>
-
           <li><a href="#contact">Contact</a></li>
           <li><a href="https://glowlogics.edmingle.com">Login</a></li>
         </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
+      </div>
 
-    </div>
-  </header>
+      <!-- Hamburger Icon -->
+      <i class="mobile-nav-toggle d-xl-none bi bi-list" id="hamburgerIcon"></i>
+    </nav>
+
+  </div>
+</header>
+
 
   <main class="main">
 
     <!-- Hero Section -->
     <section id="hero" class="hero section" style="padding: 0;">
+  <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+    <div class="row gy-5 align-items-center">
 
-      <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-5">
-          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-            <h2>Fuel Your Future with Knowledge</h2>
-            <p style=" font-weight: 550; font-size: 24px">Learn, Grow, Glow with us.</p>
-            <div class="d-flex">
-              <a href="#services" class="read-more btn-get-started"><span>Get Started </span><i
-                  class="bi bi-arrow-right"></i></a>
-            </div>
-            <div class="row  align-items-center">
-              <div class="col-sm-12 col-lg-4">
-                <img src="assets/img/logos/msme.png" alt="MSME" width="150px">
-              </div>
-              <div class="col-sm-12 col-lg-4">
-                <img src="assets/img/logos/AICTE-log.jpeg" alt="AICTE" width="300px" class="py-2">
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 order-1 order-lg-2">
-            <img src="assets/img/cover2.jpg" class="img-fluid" alt="GlowLogics Cover Image">
-          </div>
-        </div>
+      <!-- 🖼️ Image: Zooms in from right -->
+      <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in-left" data-aos-duration="1000">
+        <img src="https://t3.ftcdn.net/jpg/05/11/14/10/360_F_511141094_BjQE469idNtNvdZrajQc9lu0HD6pqF9l.webp"
+             class="img-fluid rounded zoom-in-hover"
+             alt="GlowLogics Cover Image">
       </div>
 
+      <!-- 📝 Text: Fades up with slight delay -->
+      <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+        <h3><b>Fuel Your Future with Knowledge</b></h3>
+        <p style="font-weight: 550; font-size: 24px;">Learn, Grow, Glow with us.</p>
 
+        <!-- ✨ Button bounce/fade -->
+        <div class="d-flex mb-4" data-aos="fade-up" data-aos-delay="400">
+          <a href="#services" class="read-more btn-get-started">
+            <span>Get Started</span>
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
 
-    </section><!-- /Hero Section -->
+        <!-- 🏛 Logos fade in staggered -->
+       <div class="d-flex flex-wrap justify-content-center align-items-center gap-4 gap-lg-5 mt-4">
+  <!-- ISO Logo -->
+  <img src="https://png.pngtree.com/png-vector/20220905/ourmid/pngtree-iso-14001-certified-company-logo-badge-png-image_6137639.png" alt="ISO Certified"
+       style="height: 85px; width: auto; object-fit: contain;" class="img-fluid">
+
+  <!-- MSME Logo -->
+  <img src="assets/img/logos/msme.png" alt="MSME"
+       style="height: 85px; width: auto; object-fit: contain;" class="img-fluid">
+
+  <!-- AICTE Logo -->
+  <img src="assets/img/logos/AICTE-log.jpeg" alt="AICTE"
+       style="height: 130px; width: auto; object-fit: contain;" class="img-fluid">
+</div>
+  </div>
+</section>
+<!-- /Hero Section -->
 
     <!-- About Section -->
     <section id="about" class="about section">
@@ -144,10 +161,10 @@
             <p class="who-we-are">Who We Are</p>
             <h3>We're thrilled to have you here. Let's take a moment to introduce ourselves.</h3>
             <p class="fst-italic">
-              At GlowLogics., we're more than an online training platform—we're a dynamic community of educators,
-              learners, and innovators passionate about transforming education for the better. Founded on the belief
-              that everyone deserves access to high-quality education, we're committed to empowering individuals from
-              all walks of life to unlock their full potential and achieve their dreams.
+             At GlowLogics., we're more than an online training platform—we're a dynamic community of educators, learners,
+             and innovators passionate about transforming education for the better.
+             Founded on the belief that everyone deserves access to high-quality education,
+             we're committed to empowering individuals from all walks of life to unlock their full potential and achieve their dreams.
             </p>
             <!-- <ul>
               <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
@@ -159,94 +176,76 @@
           </div>
 
           <div class="col-lg-6 about-images" data-aos="fade-up" data-aos-delay="200">
-            <div class="row gy-4">
-              <div class="col-lg-6">
-                <img src="assets/img/about-company-1.jpg" class="img-fluid" alt="">
-              </div>
-              <div class="col-lg-6">
-                <div class="row gy-4">
-                  <div class="col-lg-12">
-                    <img src="assets/img/about-company-2.jpg" class="img-fluid" alt="">
-                  </div>
-                  <div class="col-lg-12">
-                    <img src="assets/img/about-company-3.jpg" class="img-fluid" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
+  <div class="row gy-4">
+    <!-- First image (Top-left) -->
+    <div class="col-6">
+      <img src="https://t4.ftcdn.net/jpg/03/75/66/93/240_F_375669369_DwYOKUxhxFW081GtmZFU3UUq76aLrQCv.jpg" class="img-fluid rounded" alt="">
+    </div>
 
-          </div>
+    <!-- Second image (Top-right) -->
+    <div class="col-6">
+      <img src="https://as2.ftcdn.net/v2/jpg/05/59/97/75/1000_F_559977564_UR1znvS5nZfpiTy0kbvyagB1tsFjKkwU.jpg" class="img-fluid rounded" alt="">
+    </div>
+
+    <!-- Third image (Bottom-left) -->
+    <div class="col-6">
+      <img src="https://t4.ftcdn.net/jpg/08/06/15/45/360_F_806154539_9YujNhgj3uRMBMgYPhbyGbyuO8pC7eAM.webp" class="img-fluid rounded" alt="">
+    </div>
+
+    <!-- Fourth image (Bottom-right, new one you uploaded) -->
+    <div class="col-6">
+      <img src="https://as2.ftcdn.net/v2/jpg/02/44/51/09/1000_F_244510939_ixNU30q9VmCLi6CSaSES8vxw4oaE06yZ.jpg" class="img-fluid rounded" alt="">
+    </div>
+  </div>
+</div>
 
         </div>
 
       </div>
-    </section><!-- /About Section -->
+    </section><!-- /About Section Real-World Learning from Experienced Industrial Professionals Worldwide -->
 
 
     <section id="testimonials" class="testimonials section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Industry Experts</h2>
-        <div>
-          <span>Our</span> <span class="description-title">Industrial Professionals </span> <span>from</span>
-        </div>
-      </div><!-- End Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Industrial Experts from the World’s Leading Organizations</h2>
+    <div>
+      <span>Real-World Learning from </span> <span class="description-title">Experienced Industrial</span> <span> Professionals Worldwide</span>
+    </div>
+  </div>
 
-      <div id="testimonialBrandCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <!-- Testimonial 1 -->
-          <div class="carousel-item active">
-            <div class="testimonial-item text-center">
-              <div class="row justify-content-center align-items-center">
-                <div class="col-sm-6 col-xl-3">
-                  <img src="assets/img/logos/accenture.png" alt="Accenture" width="200px" class="py-2">
-                </div>
-                <div class="col-sm-6 col-xl-3">
-                  <img src="assets/img/logos/EY.png" alt="EY" width="200px">
-                </div>
-                <div class="col-sm-6 col-xl-3">
-                  <img src="assets/img/logos/meta.png" alt="Meta" width="200px">
-                </div>
-                <div class="col-sm-6 col-xl-3">
-                  <img src="assets/img/logos/auto.png" alt="Auto" width="200px">
-                </div>
-              </div>
-            </div>
-          </div>
+  <!-- 🌀 Contained Infinite Logo Carousel -->
+  <div class="container">
+    <div class="logo-carousel-wrapper">
+    <div class="logo-carousel-track">
+  <!-- Original 10 -->
+  <img src="https://logo.clearbit.com/accenture.com" alt="Accenture" />
+  <img src="https://logo.clearbit.com/ey.com" alt="EY" />
+  <img src="https://logo.clearbit.com/meta.com" alt="Meta" />
+  <img src="https://logo.clearbit.com/microsoft.com" alt="Microsoft" />
+  <img src="https://logo.clearbit.com/oracle.com" alt="Oracle" />
+  <img src="https://logo.clearbit.com/toyota.com" alt="Toyota" />
+  <img src="https://logo.clearbit.com/hp.com" alt="HP" />
+  <img src="https://logo.clearbit.com/paypal.com" alt="PayPal" />
+  <img src="https://logo.clearbit.com/amazon.com" alt="Amazon" />
+  <img src="https://logo.clearbit.com/google.com" alt="Google" />
 
-          <!-- Testimonial 2 -->
-          <div class="carousel-item">
-            <div class="testimonial-item text-center">
-              <div class="row justify-content-center  align-items-center">
-                <div class="col-sm-6 col-xl-3">
-                  <img src="assets/img/logos/oracle.png" alt="Oracle" width="200px" >
-                </div>
-                <div class="col-sm-6 col-xl-3">
-                  <img src="assets/img/logos/toyota.png" alt="Toyota" width="200px">
-                </div>
-                <div class="col-sm-6 col-xl-3">
-                  <img src="assets/img/logos/micro.png" alt="Microsoft" width="200px">
-                </div>
-                <div class="col-sm-6 col-xl-3">
-                  <img src="assets/img/logos/meta.png" alt="Meta" width="200px">
-                </div>
-              </div>
-            </div>
-          </div>
+  <!-- New 10 -->
+  <img src="https://logo.clearbit.com/ibm.com" alt="IBM" />
+  <img src="https://logo.clearbit.com/deloitte.com" alt="Deloitte" />
+  <img src="https://logo.clearbit.com/salesforce.com" alt="Salesforce" />
+  <img src="https://logo.clearbit.com/zoho.com" alt="Zoho" />
+  <img src="https://logo.clearbit.com/slack.com" alt="Slack" />
+  <img src="https://logo.clearbit.com/shopify.com" alt="Shopify" />
+  <img src="https://logo.clearbit.com/infosys.com" alt="Infosys" />
+  <img src="https://logo.clearbit.com/tcs.com" alt="TCS" />
+  <img src="https://logo.clearbit.com/adobe.com" alt="Adobe" />
+  <img src="https://logo.clearbit.com/intel.com" alt="Intel" />
+</div>
 
-          <!-- More items can be added in a similar fashion -->
-        </div>
+    </div>
+  </div>
+</section>
 
-        <!-- Carousel Controls -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialBrandCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#testimonialBrandCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </section>
 
     <!-- Services Section -->
     <section id="services" class="services section">
@@ -254,120 +253,110 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Training Programs</h2>
-        <div><span>Explore Our</span> <span class="description-title">Technical Programs</span></div>
+        <div><span>Build Skills</span> <span class="description-title">That Make You</span><span> Industry-Ready</span> </div>
       </div><!-- End Section Title -->
 
       <div class="container">
+  <div class="row gy-4">
 
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item  position-relative">
-              <div class="icon">
-                <i class="bi bi-clipboard-data"></i>
-              </div>
-              <a href="data-science.html" class="stretched-link">
-                <h3>Data Science</h3>
-              </a>
-              <p>Unlock the potential of data with our comprehensive Data Science course.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-broadcast"></i>
-              </div>
-              <a href="artificial-inteligence.html" class="stretched-link">
-                <h3>Artificial Inteligence</h3>
-              </a>
-              <p>Our comprehensive AI course equips you with cutting-edge skills in machine learning, data science, and
-                neural networks.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-easel"></i>
-              </div>
-              <a href="machine-learning.html" class="stretched-link">
-                <h3>Machine Learning</h3>
-              </a>
-              <p>Unlock the power of data with our comprehensive Machine Learning course designed for aspiring engineers
-                and professionals.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-bounding-box-circles"></i>
-              </div>
-              <a href="cyber-security.html" class="stretched-link">
-                <h3>Cyber Security</h3>
-              </a>
-              <p>In today’s digital age, protecting sensitive data and infrastructure is more critical than ever. </p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-calendar4-week"></i>
-              </div>
-              <a href="web-development.html" class="stretched-link">
-                <h3>Web Development</h3>
-              </a>
-              <p>Full Stack Web Development Course provides a comprehensive learning experience for aspiring developers.
-              </p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-chat-square-text"></i>
-              </div>
-              <a href="app-development.html" class="stretched-link">
-                <h3>App Development</h3>
-              </a>
-              <p>Dive into the world of app development with our course designed to turn your ideas into functional
-                mobile apps.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-wrench"></i>
-              </div>
-              <a href="ui-ux.html" class="stretched-link">
-                <h3>UI/UX</h3>
-              </a>
-              <p>Our UI/UX course is designed to help you build visually stunning and user-friendly digital experiences.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-cloud"></i>
-              </div>
-              <a href="cloud-computing.html" class="stretched-link">
-                <h3>Cloud Computing</h3>
-              </a>
-              <p>Learn the fundamentals of cloud infrastructure, deployment models, and services like AWS, Microsoft
-                Azure, and Google Cloud. </p>
-            </div>
-          </div><!-- End Service Item -->
+    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+      <div class="service-item pro-card text-center">
+        <div class="icon">
+          <i class="bi bi-clipboard-data"></i>
         </div>
+        <a href="data-science.html" class="stretched-link">
+          <h3>Data Science</h3>
+        </a>
+        <p>Unlock the potential of data with our comprehensive Data Science course.</p>
       </div>
-      <br><br>
-      <div class="container section-title" data-aos="fade-up">
-        <div><span>Explore Our</span> <span class="description-title">Non Technical Programs</span></div>
-      </div><!-- End Section Title -->
+    </div>
+
+    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+      <div class="service-item pro-card text-center">
+        <div class="icon">
+          <i class="bi bi-broadcast"></i>
+        </div>
+        <a href="artificial-inteligence.html" class="stretched-link">
+          <h3>Artificial Intelligence</h3>
+        </a>
+        <p>Cutting-edge skills in machine learning, data science & neural networks.</p>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+      <div class="service-item pro-card text-center">
+        <div class="icon">
+          <i class="bi bi-easel"></i>
+        </div>
+        <a href="machine-learning.html" class="stretched-link">
+          <h3>Machine Learning</h3>
+        </a>
+        <p>Hands-on learning for aspiring ML engineers and data pros.</p>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+      <div class="service-item pro-card text-center">
+        <div class="icon">
+          <i class="bi bi-bounding-box-circles"></i>
+        </div>
+        <a href="cyber-security.html" class="stretched-link">
+          <h3>Cyber Security</h3>
+        </a>
+        <p>Master the skills to defend against today’s cyber threats.</p>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
+      <div class="service-item pro-card text-center">
+        <div class="icon">
+          <i class="bi bi-calendar4-week"></i>
+        </div>
+        <a href="web-development.html" class="stretched-link">
+          <h3>Web Development</h3>
+        </a>
+        <p>Build full-stack applications with modern technologies.</p>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="600">
+      <div class="service-item pro-card text-center">
+        <div class="icon">
+          <i class="bi bi-chat-square-text"></i>
+        </div>
+        <a href="app-development.html" class="stretched-link">
+          <h3>App Development</h3>
+        </a>
+        <p>Design and deploy mobile apps that solve real-world problems.</p>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="700">
+      <div class="service-item pro-card text-center">
+        <div class="icon">
+          <i class="bi bi-wrench"></i>
+        </div>
+        <a href="ui-ux.html" class="stretched-link">
+          <h3>UI/UX</h3>
+        </a>
+        <p>Craft stunning, user-centric digital experiences from wireframe to finish.</p>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="800">
+      <div class="service-item pro-card text-center">
+        <div class="icon">
+          <i class="bi bi-cloud"></i>
+        </div>
+        <a href="cloud-computing.html" class="stretched-link">
+          <h3>Cloud Computing</h3>
+        </a>
+        <p>Master AWS, Azure & GCP with our cloud infrastructure program.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
 
       <div class="container">
         <div class="row gy-4">
@@ -443,7 +432,7 @@
         <div class="row gy-5 justify-content-between">
 
           <div class="col-xl-5" data-aos="zoom-out" data-aos-delay="100">
-            <img src="assets/assets/img//template/eStartup/features.svg" class="img-fluid" alt="">
+            <img src="https://images.unsplash.com/photo-1552581234-26160f608093?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d2hvJTIwd2UlMjBhcmV8ZW58MHx8MHx8fDA%3D" class="img-fluid" alt="">
           </div>
 
           <div class="col-xl-6 d-flex">
@@ -512,7 +501,7 @@
           <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
             <div class="pricing-tem">
               <h3 style="color: #0dcaf0;">Self Paced Plan</h3>
-              <div class="price"><sup>₹</sup>2499.00</div>
+              <div class="price"><sup>₹</sup>3500.00</div>
               <div class="icon">
                 <i class="bi bi-send" style="color: #0dcaf0;"></i>
               </div>
@@ -533,7 +522,7 @@
             <div class="pricing-tem">
               <span class="featured">Most Popular</span>
               <h3 style="color: #fd7e14;">Pro Plan</h3>
-              <div class="price"><sup>₹</sup>5999.00<span></span></div>
+              <div class="price"><sup>₹</sup>6000.00<span></span></div>
               <div class="icon">
                 <i class="bi bi-airplane" style="color: #fd7e14;"></i>
               </div>
@@ -555,7 +544,7 @@
           <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
             <div class="pricing-tem">
               <h3 style="color: #0d6efd;">Premium Plan</h3>
-              <div class="price"><sup>₹</sup>8999.00<span></span></div>
+              <div class="price"><sup>₹</sup>9000.00<span></span></div>
               <div class="icon">
                 <i class="bi bi-rocket" style="color: #0d6efd;"></i>
               </div>
@@ -569,7 +558,7 @@
                 <li>Interview Calls from MNC's </li>
                 <li>Stipend Based Internship</li>
                 <li>Course Complete Certificate</li>
-                <li>CO Branded Internship Certificate</li>
+                <li>ISO Certified Internship Certificate</li>
                 <li>Lifetime LMS Access</li>
               </ul>
               <a href="https://rzp.io/rzp/GL6k" class="btn-buy">Buy Now</a>
